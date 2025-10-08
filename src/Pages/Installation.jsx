@@ -1,9 +1,60 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Installation = () => {
+    const [installation,setInstallation]=useState([])
+    useEffect(()=>{
+          const saveedList = JSON.parse(localStorage.getItem('installation') || '[]');
+          if(saveedList) setInstallation(saveedList)
+    },[])
+
+     const [sortoder,setsortoder]=useState('none')
     return (
         <div>
-            <h1>ami inaaaaaaaa</h1>
+        
+         <div className='bg-white rounded'>
+           <div className='text-center mt-6 '>
+                <h1 className='text-5xl font-bold'>Your Installed Apps</h1>
+                <p className='mt-4'>Explore All Trending Apps on the Market developed by us</p>
+            </div>
+            <label className='flex justify-between p-10'>
+               
+                <h1 className='font-bold text-2xl'>({installation.length}) Apps Found</h1>
+             <select value={sortoder} onChange={e=>setsortoder(e.target.value)}>
+                <option value="none">Sort By Size</option>
+                <option value="mb-asc">Low-&gt; High</option>
+                <option value="mb-desc">High-&gt; Low</option>
+             </select>
+            </label>
+          
+         </div>
+
+         <div className="space-y-3">
+  {installation.map(p => (
+    <div
+      key={p.id}
+      className="card card-side bg-base-100 shadow-xl max-w-6xl mx-auto border h-[100px] flex items-center justify-between p-4"
+    >
+      <div className="flex items-center gap-4">
+        {/* Image */}
+        <img className="w-[80px] h-[80px] rounded bg-white object-cover" src={p.image} alt="" />
+
+        {/* App Info */}
+        <div>
+          <h1 className="font-semibold text-lg">{p.description}</h1>
+          <div className="flex items-center gap-6 mt-1 text-sm">
+            <p className="font-bold text-[#00D390]">{p.downloads}M</p>
+            <p className="font-bold text-[#FF8811]">{p.ratingAvg}</p>
+            <p>{p.size}MB</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Right side: button */}
+      <button className="btn bg-[#00D390] text-white hover:bg-[#00D390]">Uninstall</button>
+    </div>
+  ))}
+</div>
+
         </div>
     );
 };

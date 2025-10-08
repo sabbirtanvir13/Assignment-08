@@ -10,7 +10,35 @@ const AppDetails = () => {
 
     const singleapp = apps?.find(app => app.id === Number(id));
 
-    const { image,reviews,size, downloads, ratingAvg, companyName, description } = singleapp || {};
+    const { image, reviews, size, downloads, ratingAvg, companyName, description } = singleapp || {};
+
+    // const handleAddinstallation = () => {
+    //     const existingList = JSON.parse(localStorage.getItem('innnnnnn'))
+    //     let updatedList=[]
+    //     if (existingList) {
+    //         updatedList=[...existingList,singleapp]
+    //     }
+    //     else{
+    //         updatedList.push(singleapp)
+    //     }
+    //      localStorage.setItem('installation', JSON.stringify(updatedList))
+    // }
+
+    const handleAddinstallation = () => {
+    const existingList = JSON.parse(localStorage.getItem('installation') || '[]');
+
+    //  check for duplicates
+    const isAlreadyInstalled = existingList.some(app => app.id === singleapp.id);
+    if (isAlreadyInstalled) {
+        alert("App already installed!");
+        return;
+    }
+    const updatedList = [...existingList, singleapp];
+    localStorage.setItem('installation', JSON.stringify(updatedList));
+
+    alert(`${singleapp.description} installed successfully!`);
+}
+
 
     return (
         <div className=''>
@@ -23,24 +51,24 @@ const AppDetails = () => {
                         {/* downloads */}
                         <div className='grid grid-cols-3 mt-4'>
                             <div>
-                                   <img src={downloadsimg} alt="" />
+                                <img src={downloadsimg} alt="" />
                                 <p>Downloads</p>
-                                <h1 className='font-bold'> {downloads} M</h1>
+                                <h1 className='font-bold text-[25px]'> {downloads} M</h1>
                             </div>
                             <div>
-                                   <img src={starimg} alt="" />
+                                <img src={starimg} alt="" />
                                 <p>Average Ratings</p>
-                                <h1 className='font-bold'> {ratingAvg} </h1>
+                                <h1 className='font-bold text-[25px]'> {ratingAvg} </h1>
                             </div>
                             <div>
-                                   <img src={likeimg} alt="" />
+                                <img src={likeimg} alt="" />
                                 <p>Total Reviews</p>
-                                <h1 className='font-bold'> {reviews} K</h1>
+                                <h1 className='font-bold text-[25px]'> {reviews} K</h1>
                             </div>
                         </div>
-                          <button className='btn rounded mt-4 bg-[#00D390] text-white'>
+                        <button onClick={handleAddinstallation} className='btn rounded mt-4 bg-[#00D390] text-white'>
                             Install Now ({size})
-                          </button>
+                        </button>
                     </div>
                 </div>
 
