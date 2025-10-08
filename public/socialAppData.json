@@ -142,5 +142,205 @@
       { "name": "4 star", "count": 300000 },
       { "name": "5 star", "count": 560000 }
     ]
+  },
+   {
+    "id": 9,
+    "image": "../src/assets/whatsapp.png",
+    "title": "WhatsApp",
+    "companyName": "Meta",
+    "description": "Messaging with voice, video, and group chat features.",
+    "size": 90,
+    "reviews": 3200000,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 2100000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "../src/assets/telegram.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ",
+    "description": "Secure messaging with channels, groups, and bots.",
+    "size": 80,
+    "reviews": 1200000,
+    "ratingAvg": 4.4,
+    "downloads": 10000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 830000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "../src/assets/discord.png",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "description": "Chat, voice, and video for communities and gamers.",
+    "size": 95,
+    "reviews": 900000,
+    "ratingAvg": 4.6,
+    "downloads": 8000,
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 545000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "../src/assets/spotify.png",
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "description": "Stream music, podcasts, and playlists anytime.",
+    "size": 110,
+    "reviews": 2000000,
+    "ratingAvg": 4.8,
+    "downloads": 15000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1260000 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "../src/assets/skype.png",
+    "title": "Skype",
+    "companyName": "Microsoft",
+    "description": "Video and voice calls, chat with colleagues or friends.",
+    "size": 75,
+    "reviews": 1000000,
+    "ratingAvg": 4.1,
+    "downloads": 6000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 515000 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "../src/assets/signal.png",
+    "title": "Signal",
+    "companyName": "Signal Foundation",
+    "description": "Private messaging with end-to-end encryption.",
+    "size": 60,
+    "reviews": 800000,
+    "ratingAvg": 4.7,
+    "downloads": 4000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 583000 }
+    ]
+  },
+    {
+    "id": 16,
+    "image": "../src/assets/line.png",
+    "title": "LINE",
+    "companyName": "LINE Corporation",
+    "description": "Free messaging, voice and video calls, and stickers.",
+    "size": 85,
+    "reviews": 700000,
+    "ratingAvg": 4.3,
+    "downloads": 6000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 473000 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "../src/assets/viber.png",
+    "title": "Viber",
+    "companyName": "Rakuten",
+    "description": "Message and call your friends with high-quality VoIP.",
+    "size": 80,
+    "reviews": 600000,
+    "ratingAvg": 4.1,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 40000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 410000 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "../src/assets/clubhouse.png",
+    "title": "Clubhouse",
+    "companyName": "Alpha Exploration",
+    "description": "Social networking via audio chat rooms.",
+    "size": 55,
+    "reviews": 400000,
+    "ratingAvg": 4.0,
+    "downloads": 2000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 303000 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "../src/assets/tumblr.png",
+    "title": "Tumblr",
+    "companyName": "Automattic",
+    "description": "Microblogging and social networking platform.",
+    "size": 60,
+    "reviews": 500000,
+    "ratingAvg": 4.1,
+    "downloads": 3000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 25000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 357000 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "../src/assets/meetup.png",
+    "title": "Meetup",
+    "companyName": "WeWork",
+    "description": "Find and join local groups to meet people and share interests.",
+    "size": 55,
+    "reviews": 300000,
+    "ratingAvg": 4.2,
+    "downloads": 1500,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 173000 }
+    ]
   }
+
+  
 ]
