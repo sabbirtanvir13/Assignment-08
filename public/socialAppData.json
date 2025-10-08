@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png",
+    "title": "Facebook",
+    "companyName": "Meta",
+    "description": "Connect with friends and family, share photos, videos, and updates.",
+    "size": 120,
+    "reviews": 3500000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+    "title": "Instagram",
+    "companyName": "Meta",
+    "description": "Share photos and videos, follow friends, explore trends.",
+    "size": 100,
+    "reviews": 2500000,
+    "ratingAvg": 4.5,
+    "downloads": 2000000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1800000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg",
+    "title": "Twitter",
+    "companyName": "Twitter, Inc.",
+    "description": "Post tweets, follow topics, and stay updated with news.",
+    "size": 90,
+    "reviews": 1500000,
+    "ratingAvg": 4.1,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 820000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/YouTube_Logo_2017.svg",
+    "title": "YouTube",
+    "companyName": "Google",
+    "description": "Watch, share, and upload videos worldwide.",
+    "size": 150,
+    "reviews": 4000000,
+    "ratingAvg": 4.7,
+    "downloads": 6000000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 2500000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/TikTok_logo.svg",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "description": "Create and watch short videos, explore trends, and connect.",
+    "size": 80,
+    "reviews": 3000000,
+    "ratingAvg": 4.6,
+    "downloads": 2500000000,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 1830000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/LinkedIn_logo_initials.png",
+    "title": "LinkedIn",
+    "companyName": "Microsoft",
+    "description": "Professional networking, connect with colleagues, find jobs.",
+    "size": 70,
+    "reviews": 1200000,
+    "ratingAvg": 4.3,
+    "downloads": 800000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 650000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Reddit_logo_orange.svg",
+    "title": "Reddit",
+    "companyName": "Reddit Inc.",
+    "description": "Join communities, share content, discuss and vote.",
+    "size": 60,
+    "reviews": 900000,
+    "ratingAvg": 4.2,
+    "downloads": 700000000,
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 460000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "../src/assets/—Pngtree—snapchat icon_3584850.png",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "description": "Send photos and videos that disappear, chat with friends.",
+    "size": 75,
+    "reviews": 1100000,
+    "ratingAvg": 4.0,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 560000 }
+    ]
+  }
+]

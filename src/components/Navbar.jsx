@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, NavLink } from 'react-router';
 import Logoimg from '../assets/logo.png'
 import { FaGithub } from "react-icons/fa";
+
+
 const Navbar = () => {
     return (
        <div className="navbar bg-base-100 shadow-sm">
@@ -45,7 +47,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <button className="btn text-white bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)]"><FaGithub /> Contribute</button>
+    <button onClick={()=>window.open("https://github.com/sabbirtanvir13")} className="btn text-white bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)]"><FaGithub /> Contribute</button>
   </div>
 </div>
     );
