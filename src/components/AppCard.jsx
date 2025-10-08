@@ -1,17 +1,19 @@
 import React from 'react';
 import { IoIosStar } from "react-icons/io";
 import { FaDownload } from "react-icons/fa";
+import { Link } from 'react-router';
 const AppCard = ({socialData}) => {
-const {title,downloads ,ratingAvg, image,companyName,description}=socialData
+const {title,downloads , id, ratingAvg, image,companyName,description}=socialData
     return (
 
+    <Link to={`/appdetailes/${id}`}>
     
         <div className="card bg-base-100 w-96 shadow-sm mt-6 mb-5  transform hover:scale-105 transition-transform duration-300">
             
-            <figure className='bg-gray-300 mx-auto p-6'>
+            <figure className='bg-gray-300  mx-auto p-6'>
                 <img className='w-4/12 '
                     src={image}
-                    alt="Shoes" />
+                    alt="app" />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">
@@ -29,6 +31,8 @@ const {title,downloads ,ratingAvg, image,companyName,description}=socialData
             </div>
               
         </div>
+    
+    </Link>
          
     );
 };
