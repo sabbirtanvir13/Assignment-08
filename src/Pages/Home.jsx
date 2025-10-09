@@ -7,7 +7,7 @@ import useApps from '../hooks/useApps';
 
 const Home = () => {
   
-    const {apps,loading,error}=useApps()
+    const {apps,}=useApps()
    
      const fuateredApp=apps.slice(0,8)
     return (

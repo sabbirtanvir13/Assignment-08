@@ -7,15 +7,22 @@ import starimg from '../assets/star.png';
 import likeimg from '../assets/like.png';
 // import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip, ComposedChart, CartesianGrid, Legend, Area } from 'recharts';
 import {
-  ComposedChart,ResponsiveContainer,XAxis,YAxis,CartesianGrid, Tooltip, Legend, Area, Bar, Line} from 'recharts';
+    ComposedChart, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Area, Bar, Line
+} from 'recharts';
 import { toast, ToastContainer } from 'react-toastify';
 
 
 const AppDetails = () => {
     const { id } = useParams();
     const { apps } = useApps();
+
     const [disabled, setDisabled] = useState(false);
     const singleapp = apps?.find(app => app.id === Number(id));
+    // loafding
+
+
+
+
     const { image, reviews, size, downloads, ratingAvg, articles, title, companyName, description, ratings } = singleapp || {};
 
     const handleAddinstallation = () => {
@@ -103,40 +110,34 @@ const AppDetails = () => {
                 {ratings && (
                     <div className="w-full  overflow-x-auto">
                         <div className="min-w-[320px]  sm:min-w-[400px] md:min-w-[500px]">
-                            {/* <BarChart width={500} height={400} data={ratings}>
-                                
-                                <XAxis dataKey="name" tick={{ fill: '#555', fontSize: 12 }} />
-                                <YAxis tick={{ fill: '#555', fontSize: 12 }} />
-                                <Tooltip />
-                                <Bar dataKey="count" fill="#FF8811" radius={[8, 8, 0, 0]} />
-                            </BarChart> */}
 
 
-<ResponsiveContainer width="100%" height={400}>
-  <ComposedChart
-    layout="vertical"
-    data={ratings}
-    margin={{
-      top: 20,
-      right: 20,
-      bottom: 20,
-      left: 40,
-    }}
-  >
-    <CartesianGrid  />
-    <XAxis type="number" />
-    <YAxis
-      dataKey="name"
-      type="category"
-      tick={{  fontSize: 20 }}
-    />
-    <Tooltip />
-    <Legend />
-    <Area dataKey="count" fill="#00D39033" />
-    <Bar dataKey="count" barSize={20} fill="#FF8811" />
-    <Line dataKey="count"  />
-  </ComposedChart>
-</ResponsiveContainer>
+
+                            <ResponsiveContainer width="100%" height={400}>
+                                <ComposedChart
+                                    layout="vertical"
+                                    data={ratings}
+                                    margin={{
+                                        top: 20,
+                                        right: 20,
+                                        bottom: 20,
+                                        left: 40,
+                                    }}
+                                >
+                                    <CartesianGrid />
+                                    <XAxis type="number" />
+                                    <YAxis
+                                        dataKey="name"
+                                        type="category"
+                                        tick={{ fontSize: 20 }}
+                                    />
+                                    <Tooltip />
+                                    <Legend />
+
+                                    <Bar dataKey="count" barSize={20} fill="#FF8811" />
+
+                                </ComposedChart>
+                            </ResponsiveContainer>
 
 
 
