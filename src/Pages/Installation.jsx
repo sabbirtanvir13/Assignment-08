@@ -29,7 +29,9 @@ const handleRemove = (id) => {
 
   localStorage.setItem('installation', JSON.stringify(updatedList));
   setInstallation(prev=>prev.filter(p => p.id !== id))
-
+  if (updatedList) {
+  toast(`${updatedList.description} uninstalled successfully!`);
+}
  
 };
 
@@ -77,11 +79,13 @@ const handleRemove = (id) => {
                         </div>
 
                         {/* Right side: button */}
-                        <button onClick={()=>handleRemove(p.id)} className="btn bg-[#00D390] text-white hover:bg-[#00D390]">Uninstall</button>
+                        <button onClick={()=>handleRemove(p.id)} className="btn bg-[#00D390] text-white hover:bg-[#00D390]">Uninstall
+                          
+                        </button>
                     </div>
                 ))}
             </div>
-
+  <ToastContainer></ToastContainer>
         </div>
     );
 };
