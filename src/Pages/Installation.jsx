@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+ import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 const Installation = () => {
     const [installation, setInstallation] = useState([])
     useEffect(() => {
@@ -21,17 +22,15 @@ const Installation = () => {
 
 
 const handleRemove = (id) => {
-  // Get the existing apps from localStorage
+  
   const existingList = JSON.parse(localStorage.getItem('installation') || '[]');
-
-  // Filter out the app you want to remove
   const updatedList = existingList.filter(p => p.id !== id);
 
-  // Save the updated list back to localStorage
-  localStorage.setItem('installation', JSON.stringify(updatedList));
 
-  alert('App uninstalled successfully!');
+  localStorage.setItem('installation', JSON.stringify(updatedList));
   setInstallation(prev=>prev.filter(p => p.id !== id))
+
+ 
 };
 
 
