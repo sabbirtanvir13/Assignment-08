@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useApps from '../hooks/useApps';
 import { useParams } from 'react-router';
 import downloadsimg from '../assets/downloads.png';
@@ -20,6 +20,11 @@ const AppDetails = () => {
     const singleapp = apps?.find(app => app.id === Number(id));
     // loafding
 
+    useEffect(() => {
+        const existingList = JSON.parse(localStorage.getItem('installation') || '[]');
+        const isAlreadyInstalled = existingList.some(app => app.id === Number(id));
+        if (isAlreadyInstalled) setDisabled(true);
+    }, [id]);
 
 
 
@@ -30,10 +35,11 @@ const AppDetails = () => {
         const existingList = JSON.parse(localStorage.getItem('installation') || '[]');
         const isAlreadyInstalled = existingList.some(app => app.id === singleapp.id);
 
+
+
+
         if (isAlreadyInstalled) {
             toast(`${singleapp.title} installed successfully!`,)
-
-
 
             setDisabled(true);
             return <Navigate to="/error" replace />;
@@ -86,7 +92,7 @@ const AppDetails = () => {
                     <button
                         onClick={handleAddinstallation}
 
-                        disabled={disabled}
+
                         className={`mt-6 font-semibold px-6 py-2 rounded-lg transition duration-300 ${disabled
                             ? 'bg-[#00D390] cursor-not-allowed text-white'
                             : 'bg-[#00D390] hover:bg-[#00b67a] text-white'

@@ -40,7 +40,7 @@
   },
   {
     "id": 3,
-    "image": "../src/assets/twitter.png",
+    "image": "https://i.pinimg.com/736x/ad/fa/ea/adfaea6dcc1b54dfd3461b1bd386671a.jpg",
     "title": "Twitter",
     "companyName": "Twitter, Inc.",
     "description": "Post tweets, follow topics, and stay updated with news.",
@@ -59,7 +59,7 @@
   },
   {
     "id": 4,
-    "image": "../src/assets/youtube.png",
+    "image": "https://i.postimg.cc/mkL6KCYj/vecteezy-youtube-png-icon-16716452.png",
     "title": "YouTube",
     "companyName": "Google",
     "description": "Watch, share, and upload videos worldwide.",
@@ -310,7 +310,7 @@
   },
   {
     "id": 18,
-    "image": "../src/assets/clubhouse.png",
+    "image": "https://i.postimg.cc/8Ptj8GSM/Clubhouse.png",
     "title": "Clubhouse",
     "companyName": "Alpha Exploration",
     "description": "Social networking via audio chat rooms.",
@@ -328,7 +328,7 @@
   },
   {
     "id": 19,
-    "image": "../src/assets/tumblr.png",
+    "image": "https://play-lh.googleusercontent.com/G4R3eZm3sDGJk0lVCOr72BwLFIYV0Jg5G7_PBOf9ZMpWwZjXaUdoZMyjFbJwxcmF5qBH",
     "title": "Tumblr",
     "companyName": "Automattic",
     "description": "Microblogging and social networking platform.",
@@ -347,7 +347,7 @@
   },
   {
     "id": 20,
-    "image": "../src/assets/meetup.png",
+    "image": "https://yt3.googleusercontent.com/69fqTaxy4wA-NXajTdapAlqSm-gGk9odCP-zucRARSNDKxultSrSeDioT2vLuMV8Rhyw053dBQ=s900-c-k-c0x00ffffff-no-rj",
     "title": "Meetup",
     "companyName": "WeWork",
     "description": "Find and join local groups to meet people and share interests.",

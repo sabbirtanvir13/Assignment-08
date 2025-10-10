@@ -12,12 +12,12 @@ const router = createBrowserRouter([
         path: "/",
         element: <MainLayouts></MainLayouts>,
         errorElement: <ErrorPage></ErrorPage>,
-        hydrateFallbackElement: <p>Loading...</p>,
+        hydrateFallbackElement: <p></p>,
         children: [
             {
                 index: true,
                 path: "/",
-                loader: () => fetch('./socialAppData.json'),
+                loader: () => fetch('/socialAppData.json'),
                 element: <Home></Home>
             },
             {
@@ -34,10 +34,10 @@ const router = createBrowserRouter([
             },
             {
                 path:"*",
-                element:<ErrorApp></ErrorApp>
+                element:<ErrorPage></ErrorPage>
             },
             {
-                path:"error",
+                path:"/error",
                 element:<ErrorApp></ErrorApp>
             }
         ]

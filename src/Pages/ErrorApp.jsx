@@ -17,10 +17,10 @@ const ErrorApp = () => {
       <h1 className="text-6xl font-bold text-red-500 mb-4">OPPS!! APP NOT FOUND😢</h1>
       <p className="text-lg text-gray-600 mb-6"> {message}The App you are requesting is not found on our system.  please try another apps</p>
       <Link
-        to="/"
+        to="/app"
         className="btn bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)] text-white hover:bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)]"
       >
-        Go Back Home
+        Go Back
       </Link>
     </div>
     );
