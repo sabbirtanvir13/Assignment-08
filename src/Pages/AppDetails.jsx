@@ -39,7 +39,7 @@ const AppDetails = () => {
 
 
         if (isAlreadyInstalled) {
-            toast(`${singleapp.title} installed successfully!`,)
+            toast(`${singleapp.title} installed successfully!😊`,)
 
             setDisabled(true);
             return <Navigate to="/error" replace />;
@@ -47,7 +47,7 @@ const AppDetails = () => {
 
         const updatedList = [...existingList, singleapp];
         localStorage.setItem('installation', JSON.stringify(updatedList));
-        toast(`${singleapp.title} installed successfully!`,)
+        toast(`${singleapp.title} installed successfully!😊`,)
         setDisabled(true);
 
 

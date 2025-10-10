@@ -30,7 +30,7 @@ const handleRemove = (id) => {
   localStorage.setItem('installation', JSON.stringify(updatedList));
   setInstallation(prev=>prev.filter(p => p.id !== id))
  if (updatedList) {
-    toast.info(`${updatedList.title || updatedList.name || updatedList.description || 'App'} uninstalled successfully!`);
+    toast.info(`${updatedList.title || updatedList.name || updatedList.description || 'App'} uninstalled successfully!😞`);
   }
 
  
