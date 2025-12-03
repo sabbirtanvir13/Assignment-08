@@ -78,7 +78,7 @@
   },
   {
     "id": 5,
-    "image": "../src/assets/tiktok.png",
+    "image": "https://i.ibb.co/HTMP3gZD/vecteezy-tiktok-png-icon-16716450.png",
     "title": "TikTok",
     "companyName": "ByteDance",
     "description": "Create and watch short videos, explore trends, and connect.",
@@ -97,7 +97,7 @@
   },
   {
     "id": 6,
-    "image": "../src/assets/Link.png",
+    "image": "https://i.ibb.co/35yps42d/vecteezy-linkedin-png-icon-16716470.png",
     "title": "LinkedIn",
     "companyName": "Microsoft",
     "description": "Professional networking, connect with colleagues, find jobs.",
@@ -117,7 +117,7 @@
   },
   {
     "id": 7,
-    "image": "../src/assets/reddit.png",
+    "image": "https://i.ibb.co/TqvFYhj5/vecteezy-reddit-logo-png-reddit-logo-transparent-png-reddit-icon-23986665.png",
     "title": "Reddit",
     "companyName": "Reddit Inc.",
     "description": "Join communities, share content, discuss and vote.",
@@ -136,7 +136,7 @@
   },
   {
     "id": 8,
-    "image": "../src/assets/snapchat.png",
+    "image": "https://i.ibb.co/z91p3H3/vecteezy-snapchat-png-icon-16716454.png",
     "title": "Snapchat",
     "companyName": "Snap Inc.",
     "description": "Send photos and videos that disappear, chat with friends.",
@@ -155,7 +155,7 @@
   },
    {
     "id": 9,
-    "image": "../src/assets/whatsapp.png",
+    "image": "https://i.ibb.co/4RQBfWYN/vecteezy-whatsapp-png-icon-16716468.png",
     "title": "WhatsApp",
     "companyName": "Meta",
     "description": "Messaging with voice, video, and group chat features.",
@@ -174,7 +174,7 @@
   },
   {
     "id": 10,
-    "image": "../src/assets/telegram.png",
+    "image": "https://i.ibb.co/8DwPP5vz/vecteezy-telegram-png-icon-16716472.png",
     "title": "Telegram",
     "companyName": "Telegram FZ",
     "description": "Secure messaging with channels, groups, and bots.",
@@ -194,7 +194,7 @@
   },
   {
     "id": 11,
-    "image": "../src/assets/discord.png",
+    "image": "https://i.ibb.co/fGyxLhf7/vecteezy-discord-logo-png-discord-icon-transparent-png-18930718.png",
     "title": "Discord",
     "companyName": "Discord Inc.",
     "description": "Chat, voice, and video for communities and gamers.",
@@ -213,7 +213,7 @@
   },
   {
     "id": 12,
-    "image": "../src/assets/spotify.png",
+    "image": "https://i.ibb.co/F46dXGcC/vecteezy-spotify-png-icon-16716458.png",
     "title": "Spotify",
     "companyName": "Spotify Ltd.",
     "description": "Stream music, podcasts, and playlists anytime.",
@@ -233,7 +233,7 @@
   },
   {
     "id": 13,
-    "image": "../src/assets/skype.png",
+    "image": "https://i.ibb.co/rfvw8J0T/favpng-b0d88a2592d6fffc7b629a16fae16c89.png",
     "title": "Skype",
     "companyName": "Microsoft",
     "description": "Video and voice calls, chat with colleagues or friends.",
@@ -253,7 +253,7 @@
   },
   {
     "id": 14,
-    "image": "../src/assets/signal.png",
+    "image": "https://i.ibb.co/fzhBQ6rC/favpng-8421a99382270654c052fcb3440b3db8.png",
     "title": "Signal",
     "companyName": "Signal Foundation",
     "description": "Private messaging with end-to-end encryption.",
@@ -272,7 +272,7 @@
   },
     {
     "id": 16,
-    "image": "../src/assets/line.png",
+    "image": "https://i.ibb.co/35yps42d/vecteezy-linkedin-png-icon-16716470.png",
     "title": "LINE",
     "companyName": "LINE Corporation",
     "description": "Free messaging, voice and video calls, and stickers.",
@@ -291,7 +291,7 @@
   },
   {
     "id": 17,
-    "image": "../src/assets/viber.png",
+    "image": "https://i.ibb.co/PsC91nkn/viber-logo-clear-background-11661896814km3h0e19u3.png",
     "title": "Viber",
     "companyName": "Rakuten",
     "description": "Message and call your friends with high-quality VoIP.",

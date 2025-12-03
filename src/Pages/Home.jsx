@@ -5,6 +5,11 @@ import { Link,  } from 'react-router';
 import AppCard from '../components/AppCard';
 import useApps from '../hooks/useApps';
 
+import Blog from './Blog';
+import Offers from './Offers';
+import Newsletter from './Newsletter';
+import Testimonials from './Testimonials';
+
 const Home = () => {
   
     const {apps,}=useApps()
@@ -31,6 +36,10 @@ const Home = () => {
               <div className='max-w-6xl mx-auto flex justify-center mt-6'>
                   <Link to='/app'><button className='btn btn-primary bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)100%)] '>Show All</button></Link> 
               </div>
+           <Blog></Blog>
+           <Offers></Offers>
+           <Newsletter></Newsletter>
+           <Testimonials></Testimonials>
         </div>
     );
 };

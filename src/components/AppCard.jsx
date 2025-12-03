@@ -2,7 +2,9 @@ import React from 'react';
 import { IoIosStar } from "react-icons/io";
 import { FaDownload } from "react-icons/fa";
 import { Link } from 'react-router';
+
 const AppCard = ({socialData}) => {
+
 const {title,downloads , id, ratingAvg, image,companyName,description}=socialData
     return (
 

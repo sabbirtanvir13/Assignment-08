@@ -6,6 +6,12 @@ import App from "../Pages/App";
 import Installation from "../Pages/Installation";
 import AppDetails from "../Pages/AppDetails";
 import ErrorApp from "../Pages/ErrorApp";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
+import Support from "../Pages/Support";
+import PremiumOfferPage from "../Pages/PremiumOfferPage";
+import FreeTrialPage from "../Pages/FreeTrialPage";
+import Bundel from "../Pages/Bundel";
 
 const router = createBrowserRouter([
     {
@@ -33,13 +39,37 @@ const router = createBrowserRouter([
                 element: <AppDetails></AppDetails>
             },
             {
-                path:"*",
-                element:<ErrorPage></ErrorPage>
+                path: "*",
+                element: <ErrorPage></ErrorPage>
             },
             {
-                path:"/error",
-                element:<ErrorApp></ErrorApp>
-            }
+                path: "/error",
+                element: <ErrorApp></ErrorApp>
+            },
+            {
+                path: "/about",
+                element: <About></About>
+            },
+            {
+                path: "/contact",
+                element: <Contact></Contact>
+            },
+            {
+                path: "/support",
+                element: <Support></Support>
+            },
+            {
+                path: "/50-off",
+                element: <PremiumOfferPage></PremiumOfferPage>
+            },
+            {
+                path: "/free-trial",
+                element: <FreeTrialPage />,
+            },
+            {
+                path: "/bundle-deals",
+                element: <Bundel />,
+            },
         ]
     },
 
