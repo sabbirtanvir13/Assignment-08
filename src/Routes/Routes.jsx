@@ -12,7 +12,10 @@ import Support from "../Pages/Support";
 import PremiumOfferPage from "../Pages/PremiumOfferPage";
 import FreeTrialPage from "../Pages/FreeTrialPage";
 import Bundel from "../Pages/Bundel";
-
+import AuthLayout from "../Layouts/AuthLayout";
+import Register from "../Pages/Register";
+import Login from "../Pages/Login";
+import PrivateRoute from "../contexts/PrivateRoute";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -32,7 +35,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/installation",
-                element: <Installation></Installation>
+                element:
+                <PrivateRoute>
+                 <Installation></Installation>
+                </PrivateRoute>
+                
             },
             {
                 path: "/appdetailes/:id",
@@ -70,8 +77,23 @@ const router = createBrowserRouter([
                 path: "/bundle-deals",
                 element: <Bundel />,
             },
-        ]
+
+        ],
     },
+    {
+    path: "/auth",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
+      },
+    ],
+  },
 
 
 ]);

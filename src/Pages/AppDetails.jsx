@@ -1,7 +1,7 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import useApps from '../hooks/useApps';
-import { useParams } from 'react-router';
+import { Navigate, useParams } from 'react-router';
 import downloadsimg from '../assets/downloads.png';
 import starimg from '../assets/star.png';
 import likeimg from '../assets/like.png';
@@ -10,12 +10,13 @@ import {
     ComposedChart, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Area, Bar, Line
 } from 'recharts';
 import { toast, ToastContainer } from 'react-toastify';
+import { AuthContext } from '../contexts/AuthContext';
 
 
 const AppDetails = () => {
     const { id } = useParams();
     const { apps } = useApps();
-
+    const { User } = use(AuthContext);
     const [disabled, setDisabled] = useState(false);
     const singleapp = apps?.find(app => app.id === Number(id));
     // loafding
@@ -31,6 +32,11 @@ const AppDetails = () => {
     const { image, reviews, size, downloads, ratingAvg, articles, title, companyName, description, ratings } = singleapp || {};
 
     const handleAddinstallation = () => {
+          if (!User) {
+            toast.warning("You need to login first! ");
+            Navigate("/auth/login");
+            return;
+        }
 
         const existingList = JSON.parse(localStorage.getItem('installation') || '[]');
         const isAlreadyInstalled = existingList.some(app => app.id === singleapp.id);

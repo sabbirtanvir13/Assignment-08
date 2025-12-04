@@ -2,7 +2,7 @@ import React from "react";
 
 const Support = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="max-w-4xl  mx-auto p-6">
 
       <img 
         src="https://img.freepik.com/free-photo/business-finance-employment-female-successful-entrepreneurs-concept-professional-stylish-asian-businesswoman-fixing-project-her-way-office-using-laptop-standing-whtie-background_1258-59124.jpg" 
